@@ -69,8 +69,8 @@ assert(
 
 let addThree = add(3)
 let addTwo = add(2)
-let leftAssociative = (addFive • addThree) • addTwo
-let rightAssociative = addFive • (addThree • addTwo)
+let leftAssociative = (addFive • addThree) • addTwo
+let rightAssociative = addFive • (addThree • addTwo)
 
 assert(
     // (h • g) • f == h • (g • f)
@@ -81,7 +81,8 @@ assert(
 // In the future we should use a precedence group to make sure that the compiler
 // is able to understand how these things compose when we don't have parens
 //: ### 4. Is the world-wide web a category in any sense? Are links morphisms?
-
+//:The world wide web is kind of a category.  However links cannot be defined as morphisms because they don't really compose.  For example, a link from one webpage to another cannot be composed with another link in order to build a link from the first to the third webpage, however the outcome of clicking these links is functionally identical.
 //: ### 5. Is Facebook a category, with people as objects and friendships as morphisms?
-
+//:I am not sure that friends via Facebook compose.  For example, a friend of a friend isn't necessarily a friend of mine.
 //: ### 6. When is a directed graph a category?
+//:A directed graph forms a category if each node has an arrow to itself, and if the arrows themselves are able to be composed.
