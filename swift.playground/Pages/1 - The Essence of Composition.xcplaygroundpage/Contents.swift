@@ -1,5 +1,6 @@
 //: ## Chapter 1: Category - The Essence of Composability
-//: 1. Implement, as best as you can, the identity function in your favorite language (or the second favorite, if your favorite language happens to be Haskell).
+//: ___
+//: ### 1. Implement, as best as you can, the identity function in your favorite language (or the second favorite, if your favorite language happens to be Haskell).
 //: ___
 
 import Foundation
@@ -9,7 +10,7 @@ import Foundation
 /// - Returns The same element from the Set of A
 func id<A>( _ element: A) -> A { element }
 //: ___
-//: 2. Implement the composition function in your favorite language. It takes two functions as arguments and returns a function that is their composition.
+//: ### 2. Implement the composition function in your favorite language. It takes two functions as arguments and returns a function that is their composition.
 //: ___
 
 /// The higher order function that takes two functions and returns their composition.
@@ -80,9 +81,17 @@ assert(
 // This one is trivially true:
 // In the future we should use a precedence group to make sure that the compiler
 // is able to understand how these things compose when we don't have parens
+//: ___
 //: ### 4. Is the world-wide web a category in any sense? Are links morphisms?
+//: ___
 //:The world wide web is kind of a category.  However links cannot be defined as morphisms because they don't really compose.  For example, a link from one webpage to another cannot be composed with another link in order to build a link from the first to the third webpage, however the outcome of clicking these links is functionally identical.
+//: ___
 //: ### 5. Is Facebook a category, with people as objects and friendships as morphisms?
+//: ___
 //:I am not sure that friends via Facebook compose.  For example, a friend of a friend isn't necessarily a friend of mine.
+//: ___
 //: ### 6. When is a directed graph a category?
+//: ___
 //:A directed graph forms a category if each node has an arrow to itself, and if the arrows themselves are able to be composed.
+//: ___
+//: [Next](@next)
