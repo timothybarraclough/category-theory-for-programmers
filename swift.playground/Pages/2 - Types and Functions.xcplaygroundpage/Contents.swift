@@ -151,7 +151,7 @@ func `false`( _ :Bool) -> Bool { false }
 
 
 
-// () -> Bool :: True / False
+// () -> Bool :: Const / True / False
 
 // Bool -> () :: Unit
 // generalized to
